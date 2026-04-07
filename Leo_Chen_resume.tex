@@ -1,0 +1,228 @@
+\documentclass[letterpaper, 11pt]{article} 
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+\setlength{\footskip}{5pt}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+  \textbf{\Huge Leo Chen} \\ \vspace{1pt}
+  \small 737-333-7731 $|$ \href{mailto:chenzyleo@gmail.com}{\underline{chenzyleo@gmail.com}} $|$
+  \href{https://linkedin.com/in/leo-scu}{\underline{linkedin.com/in/leo-scu}} $|$
+  \href{https://github.com/LeoATX}{\underline{github.com/LeoATX}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Santa Clara University}{Santa Clara, CA}
+{B.S. Electrical and Computer Engineering}{Sept 2022 -- Jun 2025}
+\resumeItem{
+  \textbf{Activities}{: Institute of Electrical and Electronics Engineers (IEEE), Association of Computing Machinery (ACM)} \\
+  \textbf{Courses}{: Data Structures, Algorithms, Operating Systems, Artificial Intelligence, Computer Architecture, Logic Design, Embedded C \& Assembly, Probability \& Statistics, Microelectronic Circuits, Circuits II}}
+\resumeSubHeadingListEnd
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+          \textbf{Languages}{: Python, C/C++, Dart, Unix Shell, JS/TS, Verilog, Matlab} \\ \textbf{Frameworks \& Tools}{: Linux, Flutter, PyTorch, Tensorflow, Keras, Numpy, Matplotlib, Angular} \\
+          \textbf{Tools}{: Linux, Git, Docker, Google Cloud, Firebase, VS Code, Jetbrains Suite} \\
+          \textbf{Interests}{: Hiking, Running, Lifting, Snowboarding, Photography, Traveling, Cars}
+        }}
+\end{itemize}
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Software Engineer Intern}{Jun 2025 -- Present}
+{ProSomnus Sleep Technologies}{Pleasanton, CA}
+\resumeItemListStart
+\resumeItem{Automate full end to end mobile applications testing and debugging using Dart and Flutter of 35+ test protocols.}
+\resumeItem{Develop a full stack mobile application with Bluetooth Low Energy peripheral devices.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Undergraduate Machine Learning Researcher}{Jun 2024 -- May 2025}
+{Santa Clara University}{Santa Clara, CA}
+\resumeItemListStart
+\resumeItem{Developed modular vision transformer models using TensorFlow, Keras, and PyTorch on Linux systems.}
+\resumeItem{Researching Chain-of-Thought prompting and Backbone Branching to enhance detection transformers.}
+\resumeItem{Optimized detection transformers for satellite imagery via layer modifications and hyperparameter tuning.}
+\resumeItem{Benchmarking models through ablation studies to improve inference speed and detection accuracy.}
+\resumeItemListEnd
+
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+\resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects \& Leadership}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+{\textbf{Executive Board Member} $|$  \emph{Santa Clara University IEEE}}{Mar 2024 -- Dec 2024}
+% {IEEE at Santa Clara University}{Santa Clara, CA}
+\resumeItemListStart
+\resumeItem{Collaborated with professors and industry professionals to provide 200+ students with career \& academic insights}
+\resumeItem{Designed quarterly university wide software \& firmware workshops to spark interest in electrical engineering}
+\resumeItem{Boosted club participation by through weekly newsletter and building webpages reaching 400+ subscribers }
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Mentor} $|$ \emph{Santa Clara University}}{Aug 2023 -- Jul 2024}
+\resumeItemListStart
+\resumeItem{Provided structured technical guidance to incoming students, focusing on software engineering best practices, project design, and debugging strategies.}
+\resumeItem{Led one on one mentoring sessions on academic and professional guidance}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Fist Bump} $|$ \emph{3rd Place Hack for Humanity 2024}}{Feb 2024}
+\resumeItemListStart
+\resumeItem{Developed a web platform to streamline student event tracking with a calendar view using Dart’s Shelf library}
+\resumeItem{Engineered a unique backend database solution using Dart's Shelf library with 5 different REST API endpoints}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{The Marina Project} $|$ \emph{3rd Place ACM Winter Challenge}}{Dec 2023}
+\resumeItemListStart
+\resumeItem{Engineered a full-stack mobile application using Flutter and Dart}
+\resumeItem{Integrated 12+ REST APIs to curate music based on geographic location}
+\resumeItem{Optimized app responsiveness with data caching for a smooth user experience, improved response time by 30\%}
+\resumeItem{Implemented future loading structures to facilitate smooth transition between pages}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Park, Bus, and Jam} $|$ \emph{3rd Place INRIX Hack 2023}}{Nov 2023}
+\resumeItemListStart
+\resumeItem{Developed a multi-modal transit app, integrating driving, parking, and public transit data through REST APIs}
+\resumeItem{Created an end-to-end system, managing frontend UI and backend server communication using Flutter and Dart}
+\resumeItem{Ensured efficient server-client communication by implementing asynchronous structures and caching mechanisms}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Nest Notifications} $|$ \emph{3rd Place INRIX Hack 2022}}{Nov 2022}
+\resumeItemListStart
+\resumeItem{Developed in Inrix’s annual Hackathon competing against 26 teams, utilizing Flutter and Dart to develop an innovative solution for tracking location for friends and family, while integrating Inrix’s traffic data}
+\resumeItem{Designed and implemented a highly functional and visually appealing user interface using Flutter and Dart}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
